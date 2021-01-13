@@ -1,0 +1,25 @@
+<main>
+    <section>
+        <h1> TODO List </h1>
+        <p> A place to store your todos </p>
+        <form>
+            <input type="text" name="filter" [(ngModel)]="filter" placeholder="Filter your to-dos" />
+        </form>
+        <ol>
+            <li *ngFor="let item of getFilteredResults(); index as i">
+                <div class="items_box">
+                    <button *ngIf="!item.completed" class="complete_button">Complete</button>
+                    <p class="task" [ngStyle]="{'text-decoration': item.completed ? 'line-through' : 'none' }">
+                        {{item.task}}
+                    </p>
+                    <button>X</button>
+                </div>
+            </li>
+        </ol>
+        <form>
+            <input type="text" name="todo" placeholder="Add your to-do" />
+            <button class="addbutton">Add</button>
+        </form>
+    </section>
+</main>
+

@@ -1,0 +1,55 @@
+main {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    Font-weight: 300;  
+    margin: 10px 0;   
+  }
+
+form {
+    display: flex;
+    flex-direction: column;  
+  }
+
+
+  section {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 80vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  input, button {
+    font-size: 17px;
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+
+.addbutton {
+    background-color: #ff1493;
+    color: white;
+  }
+  
+.items_box * {
+    margin-right: 5px;
+  }
+  .items_box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .complete_button {
+    color: #ff69b4;
+    background-color: white;
+    border: 1.5px solid #ff69b4;
+    padding: 2.5px;
+  }
+  
+  .task {
+    flex: 1;
+  }
+  .completed {
+    text-decoration: line-through;
+    padding: 2px;
+  }
